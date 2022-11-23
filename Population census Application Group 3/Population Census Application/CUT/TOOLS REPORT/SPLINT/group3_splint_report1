@@ -1,0 +1,245 @@
+functions.c: (in function Citizen_Data_Create)
+functions.c:15:23: Function returns with non-null global new referencing null
+                      storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   functions.c:12:17: Storage new may become null
+functions.c:16:4: Return value (type int) ignored: system("clear")
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+functions.c:17:9: Parameter 1 (new->zone_id) to function strcpy is declared
+                     unique but may be aliased externally by parameter 2 (zid)
+  A unique or only parameter may be aliased by some other parameter or visible
+  global. (Use -mayaliasunique to inhibit warning)
+functions.c:20:8: Test expression for while not boolean, type int: 1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+functions.c:22:7: Variable flag shadows outer declaration
+  An outer declaration is shadowed by the local declaration. (Use -shadow to
+  inhibit warning)
+   functions.c:19:6: Previous definition of flag: int
+functions.c:24:3: Return value (type int) ignored: system("clear")
+functions.c:25:3: Return value (type int) ignored: scanf("%s", new-...
+functions.c:32:6: Assignment of pd * to temp *: c = ptr
+  Types are incompatible. (Use -type to inhibit warning)
+functions.c:28:24: Only storage ptr->next assigned to unqualified (in post loop
+                      increment): ptr = ptr->next
+  The only reference to this storage is transferred to another reference (e.g.,
+  by returning it) that does not have the only annotation. This may lead to a
+  memory leak, since the new reference is not necessarily released. (Use
+  -onlytrans to inhibit warning)
+functions.c:44:8: Test expression for while not boolean, type int: 1
+functions.c:47:10: Return value (type int) ignored: system("clear")
+functions.c:48:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:55:8: Test expression for while not boolean, type int: 1
+functions.c:58:3: Return value (type int) ignored: system("clear")
+functions.c:59:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:65:8: Test expression for while not boolean, type int: 1
+functions.c:68:3: Return value (type int) ignored: system("clear")
+functions.c:69:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:75:8: Test expression for while not boolean, type int: 1
+functions.c:78:3: Return value (type int) ignored: system("clear")
+functions.c:79:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:85:8: Test expression for while not boolean, type int: 1
+functions.c:88:3: Return value (type int) ignored: system("clear")
+functions.c:89:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:110:8: Test expression for while not boolean, type int: 1
+functions.c:113:3: Return value (type int) ignored: system("clear")
+functions.c:114:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:121:11: Test expression for if not boolean, type unsigned short
+    int: ((*__ctype_b_loc())[(int)((new->address[0]))] & (unsigned short
+    int)_ISblank)
+functions.c:132:8: Test expression for while not boolean, type int: 1
+functions.c:135:3: Return value (type int) ignored: system("clear")
+functions.c:136:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:152:8: Test expression for while not boolean, type int: 1
+functions.c:155:3: Return value (type int) ignored: system("clear")
+functions.c:156:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:164:8: Test expression for while not boolean, type int: 1
+functions.c:168:3: Return value (type int) ignored: system("clear")
+functions.c:169:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:177:8: Test expression for while not boolean, type int: 1
+functions.c:181:3: Return value (type int) ignored: system("clear")
+functions.c:182:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:190:8: Test expression for while not boolean, type int: 1
+functions.c:194:3: Return value (type int) ignored: system("clear")
+functions.c:195:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:211:8: Test expression for while not boolean, type int: 1
+functions.c:215:10: Return value (type int) ignored: scanf("%s", new-...
+functions.c:234:2: Path with no return in function declared to return int
+  There is a path through a function declared to return a value on which there
+  is no return statement. This means the execution may fall through without
+  returning a meaningful result to the caller. (Use -noret to inhibit warning)
+functions.c:19:6: Variable flag declared but not used
+  A variable is declared but never used. Use /*@unused@*/ in front of
+  declaration to suppress message. (Use -varuse to inhibit warning)
+functions.c: (in function Citizen_Data_View1)
+functions.c:242:3: Return value (type int) ignored: system("read a")
+functions.c:243:3: Return value (type int) ignored: system("clear")
+functions.c:251:2: Format string for printf has 0 args, given 1
+functions.c:252:2: Format string for printf has 0 args, given 1
+functions.c:253:9: Format string for printf has 0 args, given 1
+functions.c:254:2: Format string for printf has 0 args, given 1
+functions.c:255:9: Format string for printf has 0 args, given 1
+functions.c:256:2: Format string for printf has 0 args, given 1
+functions.c:257:2: Format string for printf has 0 args, given 1
+functions.c:258:2: Format string for printf has 0 args, given 1
+functions.c:259:2: Format string for printf has 0 args, given 1
+functions.c:260:2: Format string for printf has 0 args, given 1
+functions.c:261:2: Format string for printf has 0 args, given 1
+functions.c:262:2: Format string for printf has 0 args, given 1
+functions.c:263:2: Format string for printf has 0 args, given 1
+functions.c:265:2: Return value (type int) ignored: system("read a")
+functions.c:266:2: Return value (type int) ignored: system("clear")
+functions.c:248:26: Only storage ptr->next assigned to unqualified (in post
+                       loop increment): ptr = ptr->next
+functions.c:268:2: Path with no return in function declared to return int
+functions.c:268:2: Function returns with non-null global start referencing null
+                      storage
+functions.c: (in function Citizen_Data_Edit)
+functions.c:279:3: Return value (type int) ignored: system("read a")
+functions.c:280:3: Return value (type int) ignored: system("clear")
+functions.c:282:2: Return value (type int) ignored: Citizen_Data_View()
+functions.c:285:17: Variable ch2 initialized to type size_t, expects int:
+                       sizeof(ch)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+functions.c:286:5: Array element ch[0] used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+functions.c:288:9: Test expression for while not boolean, type int: 1
+functions.c:291:4: Return value (type int) ignored: system("clear")
+functions.c:292:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:296:15: Return value (type int) ignored: system("read a")
+functions.c:297:15: Return value (type int) ignored: system("clear")
+functions.c:304:9: Test expression for while not boolean, type int: 1
+functions.c:307:4: Return value (type int) ignored: system("clear")
+functions.c:308:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:312:15: Return value (type int) ignored: system("read a")
+functions.c:313:15: Return value (type int) ignored: system("clear")
+functions.c:320:9: Test expression for while not boolean, type int: 1
+functions.c:323:4: Return value (type int) ignored: system("clear")
+functions.c:324:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:328:15: Return value (type int) ignored: system("read a")
+functions.c:329:15: Return value (type int) ignored: system("clear")
+functions.c:336:9: Test expression for while not boolean, type int: 1
+functions.c:339:4: Return value (type int) ignored: system("clear")
+functions.c:340:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:346:12: Test expression for if not boolean, type unsigned short
+    int: ((*__ctype_b_loc())[(int)((new->address[0]))] & (unsigned short
+    int)_ISblank)
+functions.c:354:15: Return value (type int) ignored: system("read a")
+functions.c:355:15: Return value (type int) ignored: system("clear")
+functions.c:362:9: Test expression for while not boolean, type int: 1
+functions.c:365:4: Return value (type int) ignored: system("clear")
+functions.c:366:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:378:15: Return value (type int) ignored: system("read a")
+functions.c:379:15: Return value (type int) ignored: system("clear")
+functions.c:386:9: Test expression for while not boolean, type int: 1
+functions.c:389:4: Return value (type int) ignored: system("clear")
+functions.c:390:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:394:15: Return value (type int) ignored: system("read a")
+functions.c:395:15: Return value (type int) ignored: system("clear")
+functions.c:402:9: Test expression for while not boolean, type int: 1
+functions.c:405:4: Return value (type int) ignored: system("clear")
+functions.c:406:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:410:15: Return value (type int) ignored: system("read a")
+functions.c:411:15: Return value (type int) ignored: system("clear")
+functions.c:418:9: Test expression for while not boolean, type int: 1
+functions.c:421:4: Return value (type int) ignored: system("clear")
+functions.c:422:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:426:15: Return value (type int) ignored: system("read a")
+functions.c:427:15: Return value (type int) ignored: system("clear")
+functions.c:434:9: Test expression for while not boolean, type int: 1
+functions.c:437:4: Return value (type int) ignored: system("clear")
+functions.c:438:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:450:12: Return value (type int) ignored: system("read a")
+functions.c:451:12: Return value (type int) ignored: system("clear")
+functions.c:458:9: Test expression for while not boolean, type int: 1
+functions.c:461:4: Return value (type int) ignored: system("clear")
+functions.c:462:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:478:15: Return value (type int) ignored: system("read a")
+functions.c:479:15: Return value (type int) ignored: system("clear")
+functions.c:486:9: Test expression for while not boolean, type int: 1
+functions.c:489:4: Return value (type int) ignored: system("clear")
+functions.c:490:4: Return value (type int) ignored: scanf("%s", new-...
+functions.c:494:15: Return value (type int) ignored: system("read a")
+functions.c:495:15: Return value (type int) ignored: system("clear")
+functions.c:503:2: Path with no return in function declared to return int
+functions.c:503:2: Function returns with non-null global start referencing null
+                      storage
+functions.c:284:7: Variable ch1 declared but not used
+functions.c: (in function Citizen_Data_Delete)
+functions.c:509:17: Return value (type int) ignored: system("read a")
+functions.c:510:17: Return value (type int) ignored: system("clear")
+functions.c:515:9: Return value (type int) ignored: scanf("%s", tssid)
+functions.c:516:24: Arrow access from possibly null pointer start: start->ssid
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+functions.c:519:17: Only storage start->next assigned to unqualified:
+                       start = start->next
+functions.c:520:22: Only storage ptr->next (type struct population_details *)
+    derived from released storage is not released (memory leak): ptr
+  A storage leak due to incomplete deallocation of a structure or deep pointer
+  is suspected. Unshared storage that is reachable from a reference that is
+  being deallocated has not yet been deallocated. Splint assumes when an object
+  is passed as an out only void pointer that the outer object will be
+  deallocated, but the inner objects will not. (Use -compdestroy to inhibit
+  warning)
+functions.c:520:22: Unqualified storage ptr passed as only param: free (ptr)
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+functions.c:525:29: Left operand of && is non-boolean (pd *):
+                       (ptr) && ptr->ssid != tssid
+  The operand of a boolean operator is not a boolean. Use +ptrnegate to allow !
+  to be used on pointers. (Use -boolops to inhibit warning)
+functions.c:525:56: Only storage ptr->next assigned to unqualified (in post
+                       loop increment): ptr = ptr->next
+functions.c:529:21: Return value (type int) ignored: system("read a")
+functions.c:530:21: Return value (type int) ignored: system("clear")
+functions.c:532:28: Arrow access from possibly null pointer ptr: ptr->next
+   functions.c:525:60: Storage ptr may become null
+functions.c:532:14: Implicitly only storage prev->next (type struct
+    population_details *) not released before assignment:
+    prev->next = ptr->next
+  A memory leak has been detected. Only-qualified storage is not released
+  before the last reference to it is lost. (Use -mustfreeonly to inhibit
+  warning)
+functions.c:533:19: Kept storage ptr passed as only param: free (ptr)
+  storage is transferred to a non-temporary reference after being passed as
+  keep parameter. The storage may be released or new aliases created. (Use
+  -kepttrans to inhibit warning)
+   functions.c:532:14: Storage ptr becomes kept
+functions.c:534:10: Variable start is released in false branch, but live in
+                       true branch.
+  The state of a variable is different depending on which branch is taken. This
+  means no annotation can sensibly be applied to the storage. (Use -branchstate
+  to inhibit warning)
+   functions.c:534:10: in false branch:
+   functions.c:533:19: Storage start released
+   functions.c:534:10: in true branch:
+   functions.c:519:17: Storage start defined
+functions.c:534:10: Storage prev->next->next is kept in one path, but live in
+                       another.
+   functions.c:532:14: Storage prev->next->next becomes kept
+functions.c:535:2: Path with no return in function declared to return int
+functions.c:535:2: Function returns with global start referencing released
+                      storage
+   functions.c:533:19: Storage start released
+functions.c:535:2: Function returns with global ptr referencing released
+                      storage
+   functions.c:533:19: Storage ptr released
+functions.c:535:2: Global storage *(prev->next) contains 1 undefined field when
+                      call returns: next
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+functions.c:6:5: Variable exported but not used outside functions: start
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+functions.c:6:12: Variable exported but not used outside functions: new
+functions.c:6:17: Variable exported but not used outside functions: ptr
+functions.c:6:22: Variable exported but not used outside functions: prev
+
