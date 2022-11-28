@@ -1,0 +1,15 @@
+==1425478==
+==1425478== HEAP SUMMARY:
+==1425478==     in use at exit: 4,352 bytes in 34 blocks
+==1425478==   total heap usage: 45 allocs, 11 frees, 25,144 bytes allocated
+==1425478==
+==1425478== LEAK SUMMARY:
+==1425478==    definitely lost: 0 bytes in 0 blocks
+==1425478==    indirectly lost: 0 bytes in 0 blocks
+==1425478==      possibly lost: 0 bytes in 0 blocks
+==1425478==    still reachable: 4,352 bytes in 34 blocks
+==1425478==         suppressed: 0 bytes in 0 blocks
+==1425478== Rerun with --leak-check=full to see details of leaked memory
+==1425478==
+==1425478== For lists of detected and suppressed errors, rerun with: -s
+==1425478== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
